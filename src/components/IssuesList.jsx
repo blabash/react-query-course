@@ -5,7 +5,7 @@ export default function IssuesList() {
   const { data, isLoading, isError } = useQuery(["issues"], () =>
     fetch("/api/issues").then((res) => res.json())
   );
-  console.log("data", data);
+
   return (
     <div>
       <h2>Issues List</h2>
